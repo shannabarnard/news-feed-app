@@ -24,7 +24,7 @@ npm start
 
 
 ### Scaffolding:
-I have used [webpack-starter](hhttps://github.com/wbkd/webpack-starter) to scaffold this app.
+I have used [webpack-starter](https://github.com/wbkd/webpack-starter) to scaffold this app.
 
 #### Validation (for webpack-starter)
 

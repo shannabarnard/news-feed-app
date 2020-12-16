@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
 //----------------------------------*\
 // SCSS Variables
 // I'm going to keep this as one file
 // for simplicity but an option would be to
-// split global colours, fonts etc or if going Atomic
-// add specifics above relevant files
+// split global colours, fonts etc.
 //----------------------------------*/
 @import 'variables/variables';
 
 //----------------------------------*\
 // SCSS BASE
 //----------------------------------*/
+@import 'base/reset';
 @import 'base/root';
 @import 'base/grid';
 @import 'base/typography';
@@ -19,7 +17,9 @@
 //----------------------------------*\
 // SCSS Layouts: TBC
 //----------------------------------*/
+@import 'layouts/footer';
 
 //----------------------------------*\
 // SCSS Components: TBC
 //----------------------------------*/
+@import 'components/article-list';

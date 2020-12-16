@@ -1,4 +1,11 @@
 body {
   color: $font-color;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: $font-base-size;
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

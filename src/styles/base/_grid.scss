@@ -1,3 +1,6 @@
+$grid-container-header__item-bg: #ccc;
+$grid-container-header__item-text: white;
+$article__content-bg: #eee;
 
 .grid-container {
   width: 100vw;
@@ -9,8 +12,6 @@
   grid-gap: 10px;
 
   & > * {
-    background: #f1f1f1;
-
     &.header,
     &.footer {
       grid-column: 1 / -1;
@@ -22,8 +23,8 @@
       justify-content: space-between;
 
       .header__item {
-        background-color: #ccc;
-        color: white;
+        background-color: $grid-container-header__item-bg;
+        color: $grid-container-header__item-text;
       }
     }
 
@@ -35,7 +36,7 @@
       grid-gap: 10px;
 
       & > * {
-        background: #eee;
+        background: $article__content-bg;
       }
 
       .article__content--left {

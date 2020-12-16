@@ -1,0 +1,25 @@
+$article__content-last-published-text: $font-color-subtle;
+$article__content-byline-text: $font-color-subtle;
+
+.article__content {
+  & > * {
+    .last-published {
+      font-weight: 600;
+      font-size: 19px;
+      color: $article__content-last-published-text;
+    }
+
+    .byline {
+      color: $article__content-byline-text;
+      font-size: 0.85rem;
+    }
+
+    .image-thumb-wide {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}

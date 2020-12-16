@@ -23,7 +23,7 @@ $article__content-bg: #eee;
       justify-content: space-between;
     }
 
-    &.article__content {
+    &.article__container {
       grid-column: 1 / -1;
       display: grid;
       grid-template-rows: repeat(2, 1fr);

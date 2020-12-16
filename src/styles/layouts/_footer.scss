@@ -2,7 +2,9 @@ $footer-bg: $primary;
 $footer-text: white;
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $footer-bg;
   color: $footer-text;
-  text-align: center;
 }

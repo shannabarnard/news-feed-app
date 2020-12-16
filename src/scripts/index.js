@@ -83,7 +83,59 @@ function fetchData() {
             }
         }
       }
-      // filteredData.map((item, key) => {});
+      let postsContainer = document.getElementById("article__content");
+      //adding posts to the UI
+      filteredData.map((item, key) => {
+        //adding date
+        let rootDate = document.createElement("div");
+        rootDate.classList.add("article__content--left");
+        let childDate = document.createElement("div");
+        childDate.classList.add("last-published");
+        childDate.innerHTML = item.publishedDate;
+        rootDate.appendChild(childDate);
+
+        postsContainer.appendChild(rootDate);
+
+        //center node
+        let rootCenter = document.createElement("div");
+        rootCenter.classList.add("article__content--center");
+
+        //sub center nodes
+        //adding heading
+        let rootHeading = document.createElement("div");
+        rootHeading.classList.add("headline");
+        let subChildHeading = document.createElement("h2");
+        subChildHeading.innerHTML = item.headline;
+        rootHeading.appendChild(subChildHeading);
+        rootCenter.appendChild(rootHeading);
+
+        //adding summary
+        let rootSummary = document.createElement("div");
+        rootSummary.classList.add("summary");
+        let childSummary = document.createElement("p");
+        childSummary.innerHTML = item.summarry;
+        rootSummary.appendChild(childSummary);
+        rootCenter.appendChild(rootSummary);
+
+        //adding author
+        let rootAuthor = document.createElement("div");
+        rootAuthor.classList.add("byline");
+        rootCenter.appendChild(rootAuthor);
+
+        postsContainer.appendChild(rootCenter);
+
+        //adding image
+        let rootImage = document.createElement("div");
+        rootImage.classList.add("article__content--right");
+        let childImage = document.createElement("div");
+        childImage.classList.add("image-thumb-wide");
+        let subChildImage = document.createElement("img");
+        subChildImage.src = item.image;
+        childImage.appendChild(subChildImage);
+        rootImage.appendChild(childImage);
+        rootCenter.appendChild(rootImage);
+        postsContainer.appendChild(rootImage);
+      });
       console.log(filteredData);
     })
 

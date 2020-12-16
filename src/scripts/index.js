@@ -1,4 +1,5 @@
 import '../styles/index.scss';
+import './animations';
 import axios from "axios";
 
 //global states
@@ -21,7 +22,7 @@ function fetchData() {
       currentData = JSON.parse(slicedString);
       console.log(currentData);
 
-      //looping through the conetnt objs
+      //looping through the content objs
       for (
         let contentObj = 0;
         contentObj < currentData.page.content.length;

@@ -1,0 +1,13 @@
+$language-toggle-lang-text: $primary;
+$language-toggle-lang-border: $secondary;
+
+.language-toggle {
+  position: absolute;
+  right: 0;
+
+  .lang {
+    color: $language-toggle-lang-text;
+    border: 1px solid $language-toggle-lang-border;
+    padding: 10px 20px;
+  }
+}

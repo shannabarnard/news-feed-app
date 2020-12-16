@@ -17,9 +17,11 @@
 //----------------------------------*\
 // SCSS Layouts: TBC
 //----------------------------------*/
+@import 'layouts/header';
 @import 'layouts/footer';
 
 //----------------------------------*\
 // SCSS Components: TBC
 //----------------------------------*/
+@import 'components/language-toggle';
 @import 'components/article-list';

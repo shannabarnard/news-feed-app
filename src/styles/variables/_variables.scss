@@ -1,9 +1,20 @@
+:root {
+  --offWhite: #f8f8f8;
+  --lightest-gray: #f3f3f3;
+  --lighter-gray: #eee;
+  --light-gray: #ddd;
+  --gray: #9e9e9e;
+  --dark-gray: #444;
+  --darker-gray: #222;
+  --darkest-gray: #111;
+  --black: #000;
+}
 
 //----------------------------------*\
 // Just for demo of this app but usually I would define primary, secondary etc. and the work /// with the various shades of these. e.g. darken( $primary, 10% ) based on brand guidlines.
 //----------------------------------*/
-$primary: black;
-$secondary: #9e9e9e;
+$primary: var(--black);
+$secondary: var(--gray);
 
 $font-color: $primary;
 $font-color-subtle: $secondary;

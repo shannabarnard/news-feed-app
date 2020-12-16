@@ -21,11 +21,6 @@ $article__content-bg: #eee;
       display: grid;
       grid-template-columns: repeat(2, minmax(100px, 400px));
       justify-content: space-between;
-
-      .header__item {
-        background-color: $grid-container-header__item-bg;
-        color: $grid-container-header__item-text;
-      }
     }
 
     &.article__content {
@@ -34,10 +29,6 @@ $article__content-bg: #eee;
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(6, 1fr);
       grid-gap: 10px;
-
-      & > * {
-        background: $article__content-bg;
-      }
 
       .article__content--left {
         grid-column: 1 / span 1;
